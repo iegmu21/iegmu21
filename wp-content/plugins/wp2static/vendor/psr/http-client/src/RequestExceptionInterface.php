@@ -1,24 +1,5 @@
-<?php
-
-namespace Psr\Http\Client;
-
-use Psr\Http\Message\RequestInterface;
-
-/**
- * Exception for when a request failed.
- *
- * Examples:
- *      - Request is invalid (e.g. method is missing)
- *      - Runtime request errors (e.g. the body stream is not seekable)
- */
-interface RequestExceptionInterface extends ClientExceptionInterface
-{
-    /**
-     * Returns the request.
-     *
-     * The request object MAY be a different object from the one passed to ClientInterface::sendRequest()
-     *
-     * @return RequestInterface
-     */
-    public function getRequest(): RequestInterface;
-}
+<br>
+<b>Fatal error</b>:  Uncaught Error: Interface 'Psr\Http\Client\ClientExceptionInterface' not found in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static/vendor/psr/http-client/src/RequestExceptionInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static/vendor/psr/http-client/src/RequestExceptionInterface.php</b> on line <b>14</b><br>

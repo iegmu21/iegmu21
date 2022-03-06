@@ -1,20 +1,4 @@
-<?php
-
-require __DIR__ . '/../vendor/autoload.php';
-
-$languages = \voku\helper\ASCII::getAllLanguages();
-
-$languagesKeyLengths = [];
-foreach ($languages as $language) {
-    $langSpecific = \voku\helper\ASCII::charsArrayWithOneLanguage($language, false, false);
-
-    $langSpecificKeyLength = \array_map('\mb_strlen', \array_keys($langSpecific));
-
-    if (count($langSpecificKeyLength) === 0) {
-        $languagesKeyLengths[$language] = 0;
-    } else {
-        $languagesKeyLengths[$language] = \max($langSpecificKeyLength);
-    }
-}
-
-//var_export($languagesKeyLengths);
+<br>
+<b>Warning</b>:  require(/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/../vendor/autoload.php): failed to open stream: No such file or directory in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/generate_max_key_length.php</b> on line <b>3</b><br>
+<br>
+<b>Fatal error</b>:  require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/../vendor/autoload.php' (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/generate_max_key_length.php</b> on line <b>3</b><br>

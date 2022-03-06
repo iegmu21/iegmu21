@@ -1,24 +1,5 @@
-<?php
-
-namespace Psr\Http\Client;
-
-use Psr\Http\Message\RequestInterface;
-
-/**
- * Thrown when the request cannot be completed because of network issues.
- *
- * There is no response object as this exception is thrown when no response has been received.
- *
- * Example: the target host name can not be resolved or the connection failed.
- */
-interface NetworkExceptionInterface extends ClientExceptionInterface
-{
-    /**
-     * Returns the request.
-     *
-     * The request object MAY be a different object from the one passed to ClientInterface::sendRequest()
-     *
-     * @return RequestInterface
-     */
-    public function getRequest(): RequestInterface;
-}
+<br>
+<b>Fatal error</b>:  Uncaught Error: Interface 'Psr\Http\Client\ClientExceptionInterface' not found in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static-addon-netlify/vendor/psr/http-client/src/NetworkExceptionInterface.php:14
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static-addon-netlify/vendor/psr/http-client/src/NetworkExceptionInterface.php</b> on line <b>14</b><br>

@@ -1,26 +1,4 @@
-<?php
-
-require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/vendor/autoload.php';
-
-$readmeGenerator = new \voku\PhpReadmeHelper\GenerateApi();
-$readmeGenerator->templateMethod = <<<RAW
-#### %name%
-<a href="#voku-php-readme-class-methods">↑</a>
-%description%
-
-**Parameters:**
-%params%
-
-**Return:**
-%return%
-
---------
-
-RAW;
-$readmeText = ($readmeGenerator)->generate(
-    __DIR__ . '/../src/voku/helper/ASCII.php',
-    __DIR__ . '/docs/base.md'
-);
-
-file_put_contents(__DIR__ . '/../README.md', $readmeText);
+<br>
+<b>Warning</b>:  require(/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/../vendor/autoload.php): failed to open stream: No such file or directory in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/generate_docs.php</b> on line <b>3</b><br>
+<br>
+<b>Fatal error</b>:  require(): Failed opening required '/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/../vendor/autoload.php' (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/simply-static/vendor/voku/portable-ascii/build/generate_docs.php</b> on line <b>3</b><br>

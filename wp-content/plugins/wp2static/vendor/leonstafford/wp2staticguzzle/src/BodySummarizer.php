@@ -1,28 +1,5 @@
-<?php
-
-namespace WP2StaticGuzzleHttp;
-
-use Psr\Http\Message\MessageInterface;
-
-final class BodySummarizer implements BodySummarizerInterface
-{
-    /**
-     * @var int|null
-     */
-    private $truncateAt;
-
-    public function __construct(int $truncateAt = null)
-    {
-        $this->truncateAt = $truncateAt;
-    }
-
-    /**
-     * Returns a summarized message body.
-     */
-    public function summarize(MessageInterface $message): ?string
-    {
-        return $this->truncateAt === null
-            ? \WP2StaticGuzzleHttp\Psr7\Message::bodySummary($message)
-            : \WP2StaticGuzzleHttp\Psr7\Message::bodySummary($message, $this->truncateAt);
-    }
-}
+<br>
+<b>Fatal error</b>:  Uncaught Error: Interface 'WP2StaticGuzzleHttp\BodySummarizerInterface' not found in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static/vendor/leonstafford/wp2staticguzzle/src/BodySummarizer.php:7
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static/vendor/leonstafford/wp2staticguzzle/src/BodySummarizer.php</b> on line <b>7</b><br>

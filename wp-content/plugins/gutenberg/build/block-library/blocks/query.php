@@ -1,16 +1,5 @@
-<?php
-/**
- * Server-side rendering of the `core/query` block.
- *
- * @package WordPress
- */
-
-/**
- * Registers the `core/query` block on the server.
- */
-function gutenberg_register_block_core_query() {
-	register_block_type_from_metadata(
-		__DIR__ . '/query'
-	);
-}
-add_action( 'init', 'gutenberg_register_block_core_query', 20 );
+<br>
+<b>Fatal error</b>:  Uncaught Error: Call to undefined function add_action() in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/gutenberg/build/block-library/blocks/query.php:16
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/gutenberg/build/block-library/blocks/query.php</b> on line <b>16</b><br>

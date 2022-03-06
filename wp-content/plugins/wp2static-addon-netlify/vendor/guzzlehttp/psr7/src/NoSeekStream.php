@@ -1,23 +1,5 @@
-<?php
-
-namespace GuzzleHttp\Psr7;
-
-use Psr\Http\Message\StreamInterface;
-
-/**
- * Stream decorator that prevents a stream from being seeked
- */
-class NoSeekStream implements StreamInterface
-{
-    use StreamDecoratorTrait;
-
-    public function seek($offset, $whence = SEEK_SET)
-    {
-        throw new \RuntimeException('Cannot seek a NoSeekStream');
-    }
-
-    public function isSeekable()
-    {
-        return false;
-    }
-}
+<br>
+<b>Fatal error</b>:  Uncaught Error: Interface 'Psr\Http\Message\StreamInterface' not found in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static-addon-netlify/vendor/guzzlehttp/psr7/src/NoSeekStream.php:10
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/wp2static-addon-netlify/vendor/guzzlehttp/psr7/src/NoSeekStream.php</b> on line <b>10</b><br>

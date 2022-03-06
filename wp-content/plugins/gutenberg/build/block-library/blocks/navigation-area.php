@@ -1,22 +1,5 @@
-<?php
-/**
- * Server-side rendering of the `core/navigation-area` block.
- *
- * @deprecated 5.9.0 See https://github.com/WordPress/gutenberg/issues/36524
- * @package WordPress
- */
-
-/**
- * Registers the `core/navigation-area` block on the server.
- */
-function gutenberg_register_block_core_navigation_area() {
-	register_block_type_from_metadata(
-		__DIR__ . '/navigation-area',
-		array(
-			'provides_context' => array(
-				'navigationArea' => 'area',
-			),
-		)
-	);
-}
-add_action( 'init', 'gutenberg_register_block_core_navigation_area', 20 );
+<br>
+<b>Fatal error</b>:  Uncaught Error: Call to undefined function add_action() in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/gutenberg/build/block-library/blocks/navigation-area.php:22
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/gutenberg/build/block-library/blocks/navigation-area.php</b> on line <b>22</b><br>

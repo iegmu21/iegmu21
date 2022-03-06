@@ -1,27 +1,5 @@
-<?php
-/**
- * Template canvas file to render the current 'wp_template'.
- *
- * @package gutenberg
- */
-
-/**
- * Get the template HTML.
- * This needs to run before <head> so that blocks can add scripts and styles in wp_head().
- */
-$template_html = gutenberg_get_the_template_html();
-?><!DOCTYPE html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-
-<?php echo $template_html; // phpcs:ignore WordPress.Security.EscapeOutput ?>
-
-<?php wp_footer(); ?>
-</body>
-</html>
+<br>
+<b>Fatal error</b>:  Uncaught Error: Call to undefined function gutenberg_get_the_template_html() in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/gutenberg/lib/compat/wordpress-5.9/template-canvas.php:12
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/gutenberg/lib/compat/wordpress-5.9/template-canvas.php</b> on line <b>12</b><br>

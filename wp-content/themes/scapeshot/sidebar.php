@@ -1,19 +1,5 @@
-<?php
-/**
- * The sidebar containing the main widget area
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package ScapeShot
- */
-
-$sidebar = scapeshot_get_sidebar_id();
-
-if ( '' === $sidebar ) {
-    return;
-}
-?>
-
-<aside id="secondary" class="widget-area sidebar">
-	<?php dynamic_sidebar( $sidebar ); ?>
-</aside><!-- #secondary -->
+<br>
+<b>Fatal error</b>:  Uncaught Error: Call to undefined function scapeshot_get_sidebar_id() in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/themes/scapeshot/sidebar.php:10
+Stack trace:
+#0 {main}
+  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/themes/scapeshot/sidebar.php</b> on line <b>10</b><br>

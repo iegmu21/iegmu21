@@ -1,4 +1,0 @@
-<br>
-<b>Warning</b>:  require_once(/tmp/wordpress-tests-lib/tests/phpunit/includes/functions.php): failed to open stream: No such file or directory in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/disable-search/tests/phpunit/bootstrap.php</b> on line <b>29</b><br>
-<br>
-<b>Fatal error</b>:  require_once(): Failed opening required '/tmp/wordpress-tests-lib/tests/phpunit/includes/functions.php' (include_path='.:/Applications/XAMPP/xamppfiles/lib/php') in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/plugins/disable-search/tests/phpunit/bootstrap.php</b> on line <b>29</b><br>

@@ -21,6 +21,7 @@
 // ** Database settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('FS_METHOD', 'direct');
+
 define( 'DB_NAME', 'iegmu21_db' );
 
 /** Database username */
@@ -49,14 +50,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         '/bP?7w.y{flwSE ldyB[8JBd15/E5}hFCs9<B@{nR}rN =9;o5=dG3~L2{DQog{c' );
-define( 'SECURE_AUTH_KEY',  'x^Nj&>S!DN!7/:JXn=3-NbYQoG}Lp9/0EuW&k<XV1nj81V8plAu<@BA8&~SE0T(;' );
-define( 'LOGGED_IN_KEY',    'j]z!)PG9,cR<gHT5?J11SNvhUi=*#I:?RTprvh}zjkf?*Bu?;JVQQhc1jDC#g)I_' );
-define( 'NONCE_KEY',        '0z-~,)PRuQu0ep&Wd?,*RhZEivZ3M?tC=r7vl `=:]fvj%2DT9FiG&s|?>IO)N|3' );
-define( 'AUTH_SALT',        '~Tg?eG#3az<:x>+%4%J&-!4 9S V-:)d{-bTaO|(0,-.GB`TstUJix{`*!j_XfDz' );
-define( 'SECURE_AUTH_SALT', 'smi_g3-EFE|hx892k]r{-+}5agehFKmpJy6;[=7QU$UgqjA*}Wv(X={/>n{ezMT$' );
-define( 'LOGGED_IN_SALT',   '-)v7BJ;*=DRMK3Dk$YYAxws3 bu$oK7%/GO4eLb=mZ/i77N+2^y$kO06C3lFdJ[4' );
-define( 'NONCE_SALT',       'PjxA.cQ(7%qHNvlb<FXJyg*cYz](6iQT5f]{0<gDr]+$IEQOOF:LYAT&)@Xh.+t;' );
+define( 'AUTH_KEY',         'ZQD2}3At8WSD)K5D)a`({wQ|@#`P=z>MG#Ie~`h,Hz9Nln|/&Jliw|A(1IR386@8' );
+define( 'SECURE_AUTH_KEY',  'TMySl8B$yE8J0ExM6a<oGGSB,NU+-Du3IT_jsCrHFmF_mn@kZR}e-HQByrLE8om4' );
+define( 'LOGGED_IN_KEY',    ',U8V~ !hox]WHd,dj9+)1po3g=-^EbKJDgZVZsL?6<?P6y$hy}`H)*Xy!Hd+^sIj' );
+define( 'NONCE_KEY',        'c!g4T@Vz=#4;B}`E/qKU$|bZfmfvu[1><zkpQ`Hv^pL44L[6K:Gjjs7sm7(nm*6Z' );
+define( 'AUTH_SALT',        'xtfZaGk?zgckUQ/.J^u%;^eL!($T~1j8ub#S9LhX[tkU$2i)z_Uwg/=1vdDDIHPH' );
+define( 'SECURE_AUTH_SALT', '-[du}hc4v04O]H#>X}T.x=?-?:U+huA0Ynrq1noul*nv)EJv8>r@8[[_v xnMiS-' );
+define( 'LOGGED_IN_SALT',   'YsCblGK;}28;K9ifS3*dz])ovj^52Eoo]-<0Na#Z^EGWLq6D{:4ltE2uK doWYGO' );
+define( 'NONCE_SALT',       'gYQp#}L9HdPZZZ;.%*UGoZ9#2@<}qKh2+Wyy5?!=OQ7;4hY{5* Sl$Nx,6HRlJ;d' );
 
 /**#@-*/
 
@@ -90,7 +91,7 @@ define( 'WP_DEBUG', false );
 
 /** Absolute path to the WordPress directory. */
 if ( ! defined( 'ABSPATH' ) ) {
-    define( 'ABSPATH', __DIR__ . '/' );
+	define( 'ABSPATH', __DIR__ . '/' );
 }
 
 /** Sets up WordPress vars and included files. */

@@ -1,5 +1,48 @@
-<br>
-<b>Fatal error</b>:  Uncaught Error: Call to undefined function is_active_sidebar() in /Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/themes/scapeshot/template-parts/footer/footer-widgets.php:12
-Stack trace:
-#0 {main}
-  thrown in <b>/Applications/XAMPP/xamppfiles/htdocs/iegmu21/wp-content/themes/scapeshot/template-parts/footer/footer-widgets.php</b> on line <b>12</b><br>
+<?php
+/**
+ * Displays footer widgets if assigned
+ *
+ * @package ScapeShot
+ */
+
+?>
+
+<?php
+if (
+	 is_active_sidebar( 'sidebar-2' ) ||
+	 is_active_sidebar( 'sidebar-3' ) ||
+	 is_active_sidebar( 'sidebar-4' ) ||
+	 is_active_sidebar( 'sidebar-5' ) ) :
+?>
+
+<aside <?php scapeshot_footer_sidebar_class(); ?> role="complementary">
+	<div class="wrapper">
+		<?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+			<div class="widget-column footer-widget-1">
+				<?php dynamic_sidebar( 'sidebar-2' ); ?>
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+
+		<?php if ( is_active_sidebar( 'sidebar-3' ) ) : ?>
+			<div class="widget-column footer-widget-2">
+				<?php dynamic_sidebar( 'sidebar-3' ); ?>
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+
+		<?php if ( is_active_sidebar( 'sidebar-4' ) ) : ?>
+			<div class="widget-column footer-widget-3">
+				<?php dynamic_sidebar( 'sidebar-4' ); ?>
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+
+		<?php if ( is_active_sidebar( 'sidebar-5' ) ) : ?>
+			<div class="widget-column footer-widget-4">
+				<?php dynamic_sidebar( 'sidebar-5' ); ?>
+			</div><!-- .widget-area -->
+		<?php endif; ?>
+
+
+	</div><!-- .footer-widgets-wrapper -->
+</aside><!-- .footer-widgets -->
+
+<?php endif;
